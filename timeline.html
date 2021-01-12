@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>von Neumann Boutique</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="menu-tabs-styles.css">
+  <link rel="stylesheet" href="timeline-styles.css">
+</head>
+
+<header>
+  <a style="text-decoration:none" href="index.html">
+    <h1 class="vnb">The von Neumann Boutique</h1>
+  </a>
+</header>
+
+<body>
+
+  <div class="container">
+    
+    <ul class="menu-bar">
+      <li><i><a href="menu.html" style="text-decoration: underline;">Menu</a></i></li>
+      <li><i><a href="about.html">About</a></i></li>
+      <li><i><a href="timeline.html" class="active">Research</a></i></li>
+      <li><i><a href="books.html">Results</a></i></li>
+      <li><i><a href="contact.html">Contact</a></i></li>
+    </ul>
+
+    <h1>Motivation</h1>
+
+    <div class="show-research">
+      <button class="essay-button" id="essayBtn">Research Essay</button>
+      <div id="essayModal" class="modal">  <!-- Essay Modal -->
+        <div class="modal-content">
+          <span class="close essayClose">&times;</span>
+          <div class="modal-display">
+            <iframe class="pdf" src="Brei_ResearchEssay.pdf"></iframe>
+          </div>
+        </div>
+    </div>
+
+    <br>
+
+    <h1>Project Timeline</h1>
+
+    <div class="timeline">
+
+      <div class="t-container t-left">
+        <button class="t-content t-button" id="t1Btn">
+          <h2>Winter 2019-20</h2>
+          <p>Submit research proposal</p>
+        </button>
+      </div>
+      <div id="t1Modal" class="t-modal">  <!-- 1st Timeline Modal -->
+        <div class="t-modal-content">
+          <span class="close t1Close">&times;</span>
+          <div class="modal-display">
+            <h2>Winter 2019-2020 - Research Proposal</h2>
+            <p style="text-align: justify;">The application process to accept
+            the research proposal was selective. The following summarizes 
+            the intentions behind my research:
+            </p>
+            <hr>
+            <p style="text-align: justify;">The objective is to explore a concept 
+              in computer science and re-explain it in a work of fiction 
+              so that the concept is easy for anyone outside the field to 
+              understand. Specifically, I will explore the basic communication 
+              problems in parallel computing. Using general ideas of computer 
+              science, I will create metaphors of the parallel computing 
+              challenges and represent them as the world of smart technology. 
+              In this way the story will present a world that represents current 
+              problems computer scientists are trying to solve for complex tasks.
+            </p>
+            <p style="text-align: justify;">This is an interdisciplinary project. 
+              I plan to bridge the world of computer science and everyday life 
+              to predict how smart technology will impact society in five years. 
+              The goal is to communicate advanced concepts by providing concrete 
+              metaphors for how computer science works. I will also explore ethical 
+              problems and dilemmas introduced by smart technology. Readers will not 
+              need a computer science background to understand these concepts; ideally 
+              they will not even realize that they are learning computer science. 
+              The intended audience is middle schoolers and high schoolers who might 
+              not be considering computer science as a future career path. This story 
+              will draw its readers into the field.</p>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="t-container t-right">
+        <button class="t-content t-button" id="t2Btn">
+          <h2>Spring 2020</h2>
+          <p>Research historical figure, Ada Lovelace (1815-1852)</p>
+        </button>
+      </div>
+      <div id="t2Modal" class="t-modal">  <!-- 2nd Timeline Modal -->
+        <div class="t-modal-content">
+          <span class="close t2Close">&times;</span>
+          <div class="modal-display">
+            <h2>Spring 2020 - Researching Ada Lovelace</h2>
+            <img src="Ada_Byron_aged_seventeen_(1832).png" alt="Ada Byron aged seventeen (1832)" style="max-width: 300px;"/>
+            <p style="text-align: center; font-size: small;"><b>Ada Byron aged seventeen (1832)</b></p>
+            <p style="text-align: center; font-size: small;">By Unknown author - 
+              Scanned from The Calculating Passion of Ada Byron by Joan Baum. <br>
+              Originally from the Lovelace-Byron Collection., Public Domain, 
+              https://commons.wikimedia.org/w/index.php?curid=19076813
+            </p>
+            <br>
+            <p style="text-align: justify;">The historical figure, Augusta Ada (n&eacute;e Byron) King, Countess of Lovelace, 
+              inspired the fictional character, ADA, in the boutique.
+              Before writing <i>The von Neumann Boutique</i>, I investigated several recorded events in 
+              Lovelace's life, including Lovelace's attempted elopement with her tutor, William Turner, between 
+              1832-1833.
+              My research was further advanced with the assistance of librarians from 
+              the Bodleian Libraries at the University of Oxford. They provided electronic 
+              access to diary entries located in the Lovelace Byron Dep.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="t-container t-left">
+        <button class="t-content t-button" id="t3Btn">
+          <h2>Summer 2020</h2>
+          <p>Write and publish <i>The von Neumann Boutique</i></p>
+        </button>
+      </div>
+      <div id="t3Modal" class="t-modal">  <!-- 3rd Timeline Modal -->
+        <div class="t-modal-content">
+          <span class="close t3Close">&times;</span>
+          <div class="modal-display">
+            <h2>Summer 2020 - <i>The von Neumann Boutique</i></h2>
+            <img src="Book_Stack.png" alt="Stack of books" style="max-width: 400px;"/>
+            <p style="text-align: justify;">As a Monroe scholar at William & Mary, I received a research grant  
+              to devote 7-10 weeks of my summer to research. During this time, I
+              studied parallel processing, drew connections to real-life events, and
+              wrote a story interweaving them. At the end of the summer, I published my manuscript.
+              <br><br>
+              <b>Topics in computer science:</b></p>
+            <ul style="text-align: justify;">
+              <li>Black box model</li>
+              <li>Serial computations</li>
+              <li>Bottleneck issue</li>
+              <li>Embarrassingly parallel computations</li>
+              <li>von Neumann architecture (memory, CPU/processor, input/output)</li>
+              <li>Multiple instruction multiple data (MIMD) parallel processing architecture</li>
+              <li>Interconnecting network</li>
+              <li>Data exchange topology</li>
+              <li>Fault tolerance</li>
+              <li>Fault resistance</li>
+              <li>Redundancy</li>
+              <li>etc.</li>
+            </ul>
+          
+          </div>
+        </div>
+      </div>
+
+      <div class="t-container t-right">
+        <button class="t-content t-button" id="t4Btn">
+          <h2>Winter 2020-21</h2>
+          <p>Learn enough HTML/CSS/Javascript to create website dedicated to the Boutique</p>
+        </button>
+      </div>
+      <div id="t4Modal" class="t-modal">  <!-- 4th Timeline Modal -->
+        <div class="t-modal-content">
+          <span class="close t4Close">&times;</span>
+          <div class="modal-display">
+            <h2>Winter 2020-2021</h2>
+            <p><b>A Recipe for This Website: A Few Elements I Learned to Use</b></p>
+            <br>
+            <p style="text-align: justify;">The objective was to build this website 
+              completely from scratch in HTML, CSS, and Javascript. I wanted to 
+              test how sophisticated my website would be after a few weeks without
+              using Bootstrap or other libraries for templates. 
+              Since this is the first time I've coded in HTML/CSS, 
+              I relied on blogs and tutorials, 
+              such as w3schools.com and tutorialspoint.com,
+              to learn how to use the elements and how to structure my documents. 
+              The elements I used include the following:
+            </p>
+
+            <div class="lang-table">
+
+              <div class="col" style="text-align: left;">
+                <p><b>HTML</b></p>
+                <ul>
+                  <li>Layout
+                    <ul>
+                      <li>head</li>
+                      <li>header</li>
+                      <li>body</li>
+                      <li>footer</li>
+                    </ul>
+                  </li>
+                  <li>Copy
+                    <ul>
+                      <li>h1 (heading 1)</li>
+                      <li>h2 (heading 2)</li>
+                      <li>p (paragraph)</li>
+                      <li>b (bold)</li>
+                      <li>i (italic)</li>
+                      <li>a (hyperlink)</li>
+                      <li>small (small font size)</li>
+                    </ul>
+                  </li>
+                  <li>Structure
+                    <ul>
+                      <li>div (content division)</li>
+                      <li>span (inline container)</li>
+                      <li>br (break)</li>
+                      <li>hr (horizontal rule)</li>
+                      <li>button</li>
+                      <li>ul (unordered list)</li>
+                      <li>li (list element)</li>
+                      <li>img (image) </li>
+                      <li>iframe (embeds doc)</li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="col" style="text-align: left;">
+                <p><b>CSS</b></p>
+                <ul>
+                  <li>Text
+                    <ul>
+                      <li>font-size</li>
+                      <li>font-family</li>
+                      <li>font-weight</li>
+                      <li>text-align</li>
+                      <li>text-decoration</li>
+                      <li>color</li>
+                      <li>content</li>
+                    </ul>
+                  </li>
+                  <li>Spacing 
+                    <ul>
+                      <li>padding (all, sides)</li>
+                      <li>margin (all, sides)</li>
+                      <li>max-width, width</li>
+                      <li>position (fixed, sticky, relative, absolute)</li>
+                      <li>display (block, grid, flex)</li>
+                      <li>top, bottom</li>
+                      <li>height</li>
+                      <li>overflow</li>
+                      <li>float</li>
+                      <li>z-index</li>
+                    </ul>
+                  </li>
+                  <li>Template: box, list, grid
+                    <ul>
+                      <li>border, border-radius, border-color</li>
+                      <li>box-sizing</li>
+                      <li>list-style, list-style-type</li>
+                      <li>grid-template-columns</li>
+                      <li>flex-direction</li>
+                      <li>flex-shrink</li>
+                      <li>justify-content</li>
+                    </ul>
+                  </li>
+                  <li>Background
+                    <ul>
+                      <li>background-color</li>
+                      <li>background-image</li>
+                      <li>background-repeat</li>
+                      <li>background-attachment</li>
+                      <li>background-size</li>
+                    </ul>
+                  </li>
+                  <li>Visual aid
+                    <ul>
+                      <li>visibility</li>
+                    </ul>
+                  </li>
+                  <li>Animations
+                    <ul>
+                      <li>cursor (pointer)</li>
+                      <li>hover</li>
+                      <li>transform, transform-style</li>
+                      <li>transition</li>
+                      <li>animation-name</li>
+                      <li>animation-duration</li>
+                      <li>animation-fill-mode</li>
+                      <li>animation-direction</li>
+                      <li>animation-delay</li>
+                      <li>perspective</li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="col" style="text-align: left;">
+                <p><b>Javascript</b></p>
+                <ul>
+                  <li>Variables for the following:
+                    <ul>
+                      <li>modal</li>
+                      <li>button</li>
+                      <li>span</li>
+                    </ul>
+                  </li>
+                  <li>Variable methods:
+                    <ul>
+                      <li>onclick</li>
+                      <li>style.display</li>
+                    </ul>
+                  </li>
+                  <li>Document methods:
+                    <ul>
+                      <li>getElementById</li>
+                      <li>getElementsByClassName</li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+
+
+            </div>
+            <br><br>
+          </div>
+        </div>
+      </div>
+
+      <div class="t-container t-left">
+        <div class="t-content">
+          <h2>Future...</h2>
+          <p>TBA</p>
+        </div>
+      </div>
+    </div>
+    
+    <br>
+    <br>
+  </div>
+
+  <script src="timeline.js"></script>
+</body>
+
+<footer> <small>Copyright &copy; 2020, Anneliese Brei. All rights reserved</small> </footer>
+
+</html>

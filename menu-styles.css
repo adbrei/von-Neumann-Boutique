@@ -1,0 +1,127 @@
+/* ----- Menu page stylesheet ----- */
+
+/* speech bubble for mobile */
+.bubble {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    font-family: monospace;
+    font-size: 18px;
+    text-align: left;
+    line-height: 20px;
+    max-width: 350px;
+    background: white;
+    border: 7px outset powderblue;
+    border-radius: 70px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: #000;
+}
+
+/* Desktop display */
+@media screen and (min-width: 600px){
+
+    /* divide page into two columns: louis + menu options */
+    .louis-grid {
+        display: grid;
+        grid-template-columns: 45% 55%;
+    }
+    /* speech bubble */
+    .bubble {
+        position: relative;
+        font-family: monospace;
+        font-size: 18px;
+        text-align: left;
+        line-height: 20px;
+        max-width: 350px;
+        background: white;
+        border: 7px outset powderblue;
+        border-radius: 70px;
+        padding-left: 25px;
+        padding-right: 25px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        color: #000;
+    }
+    .bubble:before {
+       content: "";
+       max-width: 3px;
+       height: 0px;
+       position: absolute;
+       border-left: 50px solid #708E92;
+       border-right: 12px solid transparent;
+       border-top: 4px solid #708E92;
+       border-bottom: 20px solid transparent;
+       left: 32px;
+       bottom: -24px;
+    }
+
+    
+}
+
+
+/* Animate blinker in speech dialogue */
+.blink {
+    animation: blinker .35s steps(2, start) infinite;
+    animation-direction: alternate;
+}
+@keyframes blinker {
+    to {visibility: hidden;}
+}
+
+/* menu links*/
+.links {
+    list-style: none;
+    padding: 0;
+    margin: 40px;
+}
+.item {
+    background-color: white;
+    padding: 10px;
+    margin: 15px;
+    position: relative;
+    color: black;
+    border: 5px outset powderblue;
+    animation-name: enter-links;
+    animation-duration: .75s;  
+    animation-fill-mode: forwards;
+}
+.item:hover {
+    font-weight: bold;
+}
+
+/* Animate links' appearance */
+@media  screen and (min-width: 600px) {
+
+    /* Rewrite item characteristics for non-mobile */
+    .item {
+        padding: 10px;
+        margin: 15px;
+        position: relative;
+        color: transparent;
+        border: 5px outset transparent;
+        animation-name: enter-links;
+        animation-duration: .75s;  
+        animation-fill-mode: forwards;
+    }
+
+    #about {animation-delay: 0s;}
+    #timeline {animation-delay: 0.05s;}
+    #books {animation-delay: .1s;}
+    #contact {animation-delay: .15s;}
+    
+    @keyframes enter-links {
+        from {
+          right: 450px;
+          border: transparent;
+          color: transparent;
+        }
+        to {
+            right: 0px;
+            border: 5px outset powderblue;
+            color: black;
+        }
+    }
+}

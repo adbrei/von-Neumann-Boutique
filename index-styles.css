@@ -1,0 +1,34 @@
+/* ----- Index page stylesheet----- */
+
+.enter {
+  padding: 5px;
+  border: 7px double rgb(200, 200, 200);
+  position: relative;
+  animation-name: enter-msg;
+  animation-duration: 1s;  
+  animation-fill-mode: forwards;
+}
+  
+@keyframes enter-msg {
+    from {
+      top: -200px;
+      background-color: powderblue;
+    }
+    to {
+      top: 0px; 
+      background-color: white;
+    }
+}
+  
+.entry-gates {
+    max-width: 90%;
+}
+@media screen and (min-width: 600px) {
+  .entry-gates {
+    max-width: 50%;
+  }
+  .entry-gates:hover {
+    transform: scale(1.05);
+  }
+}
+  

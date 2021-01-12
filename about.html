@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>von Neumann Boutique</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="menu-tabs-styles.css">
+  <link rel="stylesheet" href="about-styles.css">
+</head>
+
+<header>
+  <a style="text-decoration:none" href="index.html">
+    <h1 class="vnb">The von Neumann Boutique</h1>
+  </a>
+</header>
+
+<body>
+  
+  <div class="container">
+    
+    <ul class="menu-bar">
+      <li><i><a href="menu.html" style="text-decoration: underline;">Menu</a></i></li>
+      <li><i><a href="about.html" class="active">About</a></i></li>
+      <li><i><a href="timeline.html">Research</a></i></li>
+      <li><i><a href="books.html">Results</a></i></li>
+      <li><i><a href="contact.html">Contact</a></i></li>
+    </ul>
+
+    <br>
+    <h2>About the Boutique</h2>
+    <p class="about">
+
+      The von Neumann Boutique is a fictional framework that demonstrates 
+      abstract concepts in computer science (CS)
+      to introduce audiences with little or no CS knowledge to fundamental
+      topics. We start with a story about a smart clothing retail store, 
+      manned entirely by robots and intelligent systems.  </p>
+
+
+      <br>
+      <div>
+        <h2 class="meet">Meet the Robots</h2>
+        <p class="meet">Click on the dots to view each smart technology in the boutique.</p>
+
+        <img src="hexagon.png" alt="Boutique floor" class="floor-backdrop"/>
+        <br>
+        
+        <div class="floor">
+
+          <!-- First row -->
+          <div class="row">
+
+            <button class="dot" id="violetBtn">
+              <span class="tooltip">Violet</span>
+            </button>
+            <div id="violetModal" class="modal">  <!-- Violet Modal -->
+              <div class="modal-content">
+                <span class="close violetClose">&times;</span>
+                <div class="char-display">
+                  <h2>Violet: Purifier</h2>
+                  <img src="violet.png" alt="Violet" style="height: 400px;">
+                  <p>Keeps surfaces and materials within the boutique sanitized. Purifies air. Offers guests hygenic choices.</p>
+                  
+                </div>
+              </div>
+            </div>
+
+            <button class="dot" id="furiesBtn">
+              <span class="tooltip">The Furies</span>
+            </button>
+            <div id="furiesModal" class="modal">  <!-- Furies Modal -->
+              <div class="modal-content">
+                <span class="close furiesClose">&times;</span>
+                <div class="char-display">
+                  <h2>The Furies: Security cameras</h2>
+                  <img src="furies.png" alt="The Furies" style="height: 400px">
+                  <p>In-store security system. Named after three historical figures who monitored Ada Lovelace's movements in her youth.</p>
+                </div>
+              </div>
+            </div>
+
+            <button class="dot" id="turnerBtn">
+              <span class="tooltip">Turner</span>
+            </button>
+            <div id="turnerModal" class="modal">  <!-- Turner Modal -->
+              <div class="modal-content">
+                <span class="close turnerClose">&times;</span>
+                <div class="char-display">
+                  <h2>Turner: Inventory control specialist</h2>
+                  <img src="turner.png" alt="Turner" style="height: 400px">
+                  <p>Keeps track of inventory. Stocks items.</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Second row -->
+          <div class="row">
+            
+            <button class="dot" id="somervilleBtn">
+              <span class="tooltip">Mrs. Somerville & Chip</span>
+            </button>
+            <div id="somervilleModal" class="modal">  <!-- Somerville Modal -->
+              <div class="modal-content">
+                <span class="close somervilleClose">&times;</span>
+                <div class="char-display">
+                  <h2>Mrs. Somerville: In-store customer service representative</h2>
+                  <p>Handles customer concerns in-person. Prepares purchases before they leave the boutique.</p>
+                  <img src="somerville.png" alt="Mrs. Somerville and Chip" style="height: 300px">
+                  <h2>Chip: Online/phone customer service representative</h2>
+                  <p>Monitors and responds to online feedback. Answers calls.</p>
+
+                </div>
+              </div>
+            </div>
+
+            <button class="dot" id="louisBtn">
+              <span class="tooltip">Louis</span>
+            </button>
+            <div id="louisModal" class="modal">  <!-- Louis Modal -->
+              <div class="modal-content">
+                <span class="close louisClose">&times;</span>
+                <div class="char-display">
+                  <h2>Louis: Sales associate</h2>
+                  <img src="louis3.png" alt="Louis" style="height: 400px">
+                  <p>Acts as Ma&igrave;tre d'. Greets customers at door and determines their next course of action. 
+                    Assists customers through their shopping experience as needs arise.</p>
+                </div>
+              </div>
+            </div>
+
+            <button class="dot" id="robertBtn">
+              <span class="tooltip">Robert</span>
+            </button>
+            <div id="robertModal" class="modal">  <!-- Robert Modal -->
+              <div class="modal-content">
+                <span class="close robertClose">&times;</span>
+                <div class="char-display">
+                  <h2>Robert: Store clock & manager</h2>
+                  <img src="robert.png" alt="Robert" style="height: 400px">
+                  <p>Regulates cycles for all robots in the boutique</p>
+                </div>
+              </div>
+            </div>
+
+            <button class="dot" id="adaBtn">
+              <span class="tooltip">ADA</span>
+            </button>
+            <div id="adaModal" class="modal">  <!-- Ada Modal -->
+              <div class="modal-content">
+                <span class="close adaClose">&times;</span>
+                <div class="char-display">
+                  <h2>ADA: Appearance & Dressing Advisor</h2>
+                  <img src="ada.png" alt="ADA" style="height: 400px;">
+                  <p>Smart mirror prototype. Uses AI to create character sketches of customers. 
+                    Recommends styles and brands. Puts together outfits with store inventory.</p>
+                </div>
+              </div>
+            </div>
+
+            <button class="dot" id="faiaBtn">
+              <span class="tooltip">Faia</span>
+            </button>
+            <div id="faiaModal" class="modal">  <!-- Faia Modal -->
+              <div class="modal-content">
+                <span class="close faiaClose">&times;</span>
+                <div class="char-display">
+                  <h2>Faia: Retired fashion wardrobe</h2>
+                  <img src="faia.png" alt="Faia" style="height: 400px">
+                  <p>Outdated model replaced by ADA. Offered customers fashion advice using 
+                    combinations recommended by designers.</p>
+                </div>
+              </div>
+            </div>
+          
+          </div>
+
+          <!-- Third row-->
+          <div class="row">
+            <button class="dot" id="babbageBtn">
+              <span class="tooltip">Babbage</span>
+            </button>
+            <div id="babbageModal" class="modal">  <!-- Babbage Modal -->
+              <div class="modal-content">
+                <span class="close babbageClose">&times;</span>
+                <div class="char-display">
+                  <h2>Mr. Babbage: Cash register</h2>
+                  <img src="babbage.png" alt="Mr. Babbage" style="height: 400px">
+                  <p>Performs calculations and handles all payments.</p>
+                </div>
+              </div>
+            </div>
+
+            <button class="dot" id="gatesBtn">
+              <span class="tooltip">Gates</span>
+            </button>
+            <div id="gatesModal" class="modal">  <!-- Gates Modal -->
+              <div class="modal-content">
+                <span class="close gatesClose">&times;</span>
+                <div class="char-display">
+                  <h2>William & Henry (The Gates): Entry doors & security</h2>
+                  <img src="gates.png" alt="The Gates" style="height: 400px">
+                  <p>Monitor pedestrians outside the boutique. Determine whether or not to admit customers inside.</p>
+                </div>
+              </div>
+            </div>
+
+            <button class="dot" id="cocoBtn">
+              <span class="tooltip">Coco</span>
+            </button>
+            <div id="cocoModal" class="modal">  <!-- Coco Modal -->
+              <div class="modal-content">
+                <span class="close cocoClose">&times;</span>
+                <div class="char-display">
+                  <h2>Coco: Display & Design Manager</h2>
+                  <img src="coco.png" alt="Coco" style="height: 400px">
+                  <p>Arranges inventory artfully. Determines store arrangement to maximize customer experience.</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          
+          <!-- Fourth row -->
+          <div class="row">
+            <br><br>
+
+            <button class="dot" id="deliverBtn">
+              <span class="tooltip">DeliverBot</span>
+            </button>
+            <div id="deliverModal" class="modal">  <!-- DeliverBot Modal -->
+              <div class="modal-content">
+                <span class="close deliverClose">&times;</span>
+                <div class="char-display">
+                  <h2>DeliverBot: Delivery robot</h2>
+                  <img src="deliverbot.png" alt="DeliverBot" style="height: 400px">
+                  <p>Delivers purchases to customers' homes within the smart city.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+
+  </div>
+    
+  <script src="about.js"></script>
+</body>
+
+<footer> <small>Copyright &copy; 2020, Anneliese Brei. All rights reserved</small> </footer>
+
+</html>

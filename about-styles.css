@@ -1,0 +1,152 @@
+/* ----- About page stylesheet ----- */
+  
+.about {
+    text-align: left;
+    padding-left: 25px;
+    padding-right: 25px;
+} 
+.meet {
+    text-align: center;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+  
+/* Mobile character display */
+.about-display {  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: space-around;
+} 
+.char-display {
+    flex-shrink: 0;
+}
+
+.floor-backdrop {
+    display: none;
+}
+.meet {
+    display: none;
+}
+
+.tooltip {
+    display: none;
+}
+.dot {
+    display: none;
+}
+.close {
+    display: none;
+}
+
+
+/* Desktop character display */
+@media screen and (min-width: 600px) {
+
+    .floor-backdrop {
+        display: inline;
+        position: absolute;
+        margin-left: auto;
+        margin-right: auto;
+        
+        left: 0;
+        right: 0;
+        z-index:0; 
+    }
+    .meet {
+        display: block;
+    }
+
+    /* Dots */
+
+    .dot {
+        height: 30px;
+        width: 30px;
+        background-color: #708E92;
+        border-radius: 50%;
+        display: inline-block;
+        z-index:0.5;
+        position: relative;
+    }
+    .dot:hover {
+        background-color: powderblue;
+        cursor: pointer;
+    }
+
+    .dot:hover .tooltip {
+        visibility: visible;
+    }
+    
+    .floor .row .dot {
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .tooltip {
+        display: block;
+        visibility: hidden;
+        background-color: #708E92;
+        color: white;
+        text-align: center;
+        border-radius: 6px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+      
+        /* Position the tooltip */
+        position: absolute;
+        z-index: 1;
+        margin-top: -40px;
+        margin-left: -25px;
+    }
+
+
+    /* The Modal (background) */
+    .modal {
+        display: none; /* Hidden by default */
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Sit on top */
+        padding-top: 115px; /* Location of the box */
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+        background-color: rgb(0,0,0); /* Fallback color */
+        background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    }
+    
+    /* Modal Content */
+    .modal-content {
+        background-color: #fefefe;
+        margin: auto;
+        padding: 20px;
+        width: 80%;
+    }
+    
+    /* The Close Button */
+    .close {
+        display: inline;
+        color: #aaaaaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+    }
+    
+    .close:hover, .close:focus {
+        color: #000;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    .char-display {
+        background-color: white;
+        padding: 12px;
+        color: black;
+    }
+    .caption {
+        margin-top: 20px;
+    }
+}

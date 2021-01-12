@@ -1,0 +1,49 @@
+/* ----- Stylesheet with shared elements ----- */
+body {
+  /* Background image */
+  background-image: url(background.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+/* The von Neumann Boutique header*/
+header {
+  margin: 0px;
+  max-width: 840px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0px;
+  position: sticky;
+  top: 0;
+  text-align: center;
+  background-color: white;
+  z-index: 9;
+}
+.vnb {
+  margin-top: 0;
+  width: auto;
+  border: 10px double #708E92;
+  font-family: cursive;
+  color: black;
+  padding: 0px
+}
+.vnb:hover {
+  color: #708E92;
+  transform: scale(1.025);
+}
+
+/* Content body */
+
+.container { 
+  text-align: center;
+  max-width: 840px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Copyright notice */
+footer {
+  text-align: center;
+  bottom: 0;
+}
