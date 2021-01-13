@@ -21,7 +21,6 @@
     background-color: powderblue;
 }
 
-
 /* Modal (background) */
 .modal {
     display: none; /* Hidden by default */
@@ -53,7 +52,6 @@
     font-size: 28px;
     font-weight: bold;
 }
-
 .close:hover, .close:focus {
     color: #000;
     text-decoration: none;
@@ -202,6 +200,17 @@
     width: 33.33%;
 }
   
+.contact-author {
+    padding: 10px;
+    background-color: white;
+    border: 7px outset powderblue;
+    box-sizing: content-box;
+    text-decoration: none;
+    color: black;
+}
+.contact-author:hover {
+    background-color: powderblue;
+}
 /* Media queries - Responsive timeline on screens less than 600px wide */
 @media  screen and (max-width: 850px) {
     /* Place the timeline to the left */
@@ -234,6 +243,3 @@
         left: 0%;
     }
   }
-  
-  
-  
